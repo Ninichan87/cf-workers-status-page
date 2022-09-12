@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'webQR System Status'
   url: 'https://statuswebqr.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -15,9 +15,15 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: main-app-system
+    name: my.webqr.eu
+    description: 'webQR Main System' # default=empty
+    url: 'https://my.webqr.eu/'
+    method: GET
+    expectStatus: 200
+    
   - id: meinkiga-app-system # unique identifier
     name: my.meinkiga.app
-    description: 'MeinKiGa System' # default=empty
     url: 'https://my.meinkiga.app/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
