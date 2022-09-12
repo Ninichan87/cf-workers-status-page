@@ -1,4 +1,4 @@
-name = "webQR-System-Status"
+name = "webqr-system-status"
 workers_dev = true
 account_id = ""
 type = "webpack"
