@@ -16,14 +16,15 @@ settings:
 
 monitors:
   - id: main-app-system
-    name: my.webqr.eu
+    name: webQR Main System
     description: 'webQR Main System' # default=empty
     url: 'https://my.webqr.eu/'
     method: GET
     expectStatus: 200
+    linkable: false
     
   - id: meinkiga-app-system # unique identifier
-    name: my.meinkiga.app
+    name: MeinKiGa App
     url: 'https://my.meinkiga.app/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -31,19 +32,22 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: drkkita-app-system
-    name: my.drk-kita.app
+    name: DRK Kita App
     url: 'https://my.drk-kita.app/'
     method: GET
     expectStatus: 200
+    linkable: false
     
   - id: mghapp-app-system
-    name: my.mgh-app.de
+    name: MGH App
     url: 'https://my.mgh-app.de/'
     method: GET
     expectStatus: 200
+    linkable: false
     
   - id: satello-app-system
-    name: my.satello.app
+    name: Satello App
     url: 'https://my.satello.app/'
     method: GET
     expectStatus: 200
+    linkable: false
